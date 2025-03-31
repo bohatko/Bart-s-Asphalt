@@ -1,0 +1,27 @@
+{
+    "1fa0dd68-5069-436c-9a7d-3b54c340f1fa": {
+        "id": "24cd023f-a1f0-41a7-bf92-0ec1d757ba11",
+        "name": "Supabase Auth",
+        "designId": "e3554bc9-8f1e-4f74-b654-04532338b6cc",
+        "pluginId": "1fa0dd68-5069-436c-9a7d-3b54c340f1fa",
+        "publicData": {
+            "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN3amx3cWFrd2xwem1zam5nY2xoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMzOTQ0NTksImV4cCI6MjA1ODk3MDQ1OX0.sL9T2loanAz8JFy_KY7AdB4arcFPu13iKIIoA7XWkkU",
+            "projectUrl": "https://swjlwqakwlpzmsjngclh.supabase.co"
+        }
+    },
+    "f9ef41c3-1c53-4857-855b-f2f6a40b7186": {
+        "id": "08b2b40b-bbeb-4af3-8185-b4ee7dec638c",
+        "name": "Supabase",
+        "designId": "e3554bc9-8f1e-4f74-b654-04532338b6cc",
+        "pluginId": "f9ef41c3-1c53-4857-855b-f2f6a40b7186",
+        "publicData": {
+            "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN3amx3cWFrd2xwem1zam5nY2xoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMzOTQ0NTksImV4cCI6MjA1ODk3MDQ1OX0.sL9T2loanAz8JFy_KY7AdB4arcFPu13iKIIoA7XWkkU",
+            "projectUrl": "https://swjlwqakwlpzmsjngclh.supabase.co",
+            "realtimeTables": {
+                "users": true,
+                "courses": true,
+                "onboarding": true
+            }
+        }
+    }
+}

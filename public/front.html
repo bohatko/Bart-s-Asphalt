@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+ 
+<!-- wwFront:start -->
+<html class="" lang="<%= htmlWebpackPlugin.options.lang %>">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=0" />
+        <base
+            href="<%= htmlWebpackPlugin.options.baseTag?.href %>"
+            target="<%= htmlWebpackPlugin.options.baseTag?.target %>"
+        />
+
+        <% if (htmlWebpackPlugin.options.title) { %>
+        <title><%= htmlWebpackPlugin.options.title %></title>
+        <% } %>
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico?_wwcv=<%= htmlWebpackPlugin.options.cacheVersion %>" />
+
+        <link rel="manifest" href="manifest.json?_wwcv=6" />
+        <meta name="theme-color" content="" />
+        
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="public/fonts/Phosphor/font.css?_wwcv=6" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<style>:root{ --ww-default-font-family: 'Inter', sans-serif }</style>
+        <style>
+:root {
+--ffa59ffe-3092-4b34-aaba-2063d44ccb05: 500 18px/22px var(--ww-default-font-family, sans-serif);
+--8429c407-144c-4521-8213-dfefabab2ef6: 500 12px/15px var(--ww-default-font-family, sans-serif);
+--710a0533-92e1-4725-b031-b96cf4fe7578: 700 26px/36px var(--ww-default-font-family, sans-serif);
+--fa533fa2-1430-4d58-8239-8806a8ac55de: 400 14px/24px var(--ww-default-font-family, sans-serif);
+--77e69dc9-0f9b-4c64-8e0f-8e4651357499: 700 24px/24px var(--ww-default-font-family, sans-serif);
+--0d564ff4-ce20-4618-8b7c-ce65411e0ed0: 400 16px/26px var(--ww-default-font-family, sans-serif);
+--059d916b-6a4c-47da-8a74-1861a9fe836b: 400 12px/18px var(--ww-default-font-family, sans-serif);
+--197f5c41-7626-4433-b0a2-b9cb8686fe6c: #0080FF;
+--aa968ff3-02f5-4613-808a-6056e1ee19b7: #F4FAFF;
+--79809ec1-ec2f-4884-804f-cefa97e1c4ef: #D5EAFF;
+--c2959caa-1f2a-4e6c-be13-4a6162fe7c2a: #665CFE;
+--7c5c85c9-84f1-449c-9f6e-aca65f9ad61c: #E7E6FE;
+--5faa62aa-7847-4923-bb36-be1e4c4a32e1: #00BA87;
+--57b08ad6-0af4-4bb7-8dbe-269078946e19: #DAF7F0;
+--bc581d71-725b-4741-af52-dd313f20a502: #EAA100;
+--f0740eae-a137-4e84-9003-7f5a15ed5866: #FFF6D3;
+--0c029870-a0d7-4643-b8b3-7c5f29af425d: #FB4E31;
+--65083a68-0042-4a3d-9c0d-39c19a210b21: #FFEFED;
+--01756bb2-9812-47a4-8df8-135b2744d60c: #F4F7FC;
+--ef5a1f7a-a021-4e4f-8b61-24a3052acee3: #FFFFFF;
+--67f1f8c8-0f46-41c3-b66f-259ce4657b60: #242F57;
+--071784c5-f15a-4821-aaea-b4ab4bbacf68: #97A0C3;
+--15002256-aad2-48fe-b9b2-003e0528e17a: #EAEDF7;
+--e394a0fa-bac3-459a-ba2f-a25fe57e2870: #2C2D37;
+--f6d550d4-967c-4afc-9336-ed71a13fc67c: #41424B;
+--e4a298cf-6934-475e-a275-390283c8bb33: #DFE623;}
+.ww-app-theme-dark {
+}
+</style>
+        <link href="https://cdn.weweb.app/public/libs/weweb-icons/css/weweb-icons.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://cdn.weweb.app/public/libs/font-awesome/5.6.3/css/fontawesome.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://cdn.weweb.app/public/libs/font-awesome/5.6.3/css/fontawesome.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://cdn.weweb.app/public/libs/font-awesome/5.6.3/css/fontawesome.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://cdn.weweb.io/public/icons/heroicons/1.0.0/style.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://cdn.weweb.io/public/icons/phosphor/1.0.0/regular/phosphor-style.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <% for (let link of htmlWebpackPlugin.options?.alternateLinks || []) { %>
+        <link rel="<%= link.rel %>" hreflang="<%= link.hreflang %>" href="<%= link.href %>" />
+        <% } %> <% if (htmlWebpackPlugin.options.structuredData) { %>
+        <script type="application/ld+json">
+            <%= htmlWebpackPlugin.options.structuredData %>
+        </script>
+        <% } %> <%= htmlWebpackPlugin.options.scripts?.head %>
+    </head>
+    <body style="margin: 0; font-family: var(--ww-default-font-family, unset)">
+        <noscript>
+            <strong>
+                We're sorry but this website doesn't work properly without JavaScript enabled. Please enable it to
+                continue.
+            </strong>
+        </noscript>
+        <div id="app"></div>
+        <!-- built files will be auto injected -->
+        <%= htmlWebpackPlugin.options.scripts?.body %>
+    </body>
+</html>
+<!-- wwFront:end -->
