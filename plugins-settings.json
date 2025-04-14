@@ -20,7 +20,9 @@
             "realtimeTables": {
                 "users": true,
                 "courses": true,
-                "onboarding": true
+                "lessons": true,
+                "onboarding": true,
+                "welcomePage": true
             }
         }
     }
